@@ -1,0 +1,18 @@
+/*home*/
+.primary-image{
+	background-color: black;
+	background-image: url("../img/home/home.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+.trayectoria .jumbotron{
+	background-color: #fff;
+}
+.trayectoria .title{
+	margin-top: 10px;
+}
+.trayectoria img{
+	margin-top: 45px;
+	margin-bottom: 35px;
+}
