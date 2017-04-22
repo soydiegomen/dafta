@@ -3,20 +3,39 @@ h1.primary-title{
 	margin-bottom: 45px;
 }
 /*home*/
-.navbar a{
-	color: #fff;
+.navbar-default{
+	background-color: transparent;
 }
+.navbar-default .navbar-nav>li>a{
+	color: #fff;
+	font-size: 24px;
+}
+ul.navbar-nav{
+	margin: 0 auto;
+    float: none;
+    text-align: center;
+    max-width: 600px;
+    margin-top: 20px;
+}
+.navbar-static-top{
+	border-width: 0;
+}
+@media (min-width: 992px) {
+	.navbar-default .navbar-nav>li>a{
+		
+	}	
+}
+
+/*
+
 .collapse.navbar-collapse.navbar-right{
 	float: none !important;
     text-align: center;
 }
-.nav.navbar-nav{
-	margin: 0 auto;
-	margin-top: 25px;
-    float: none;
-    text-align: center;
-    max-width: 444px;
-}
+
+.navbar-toggle{
+	border: 1px solid #fff;
+	}*/
 .primary-image{
 	background-color: black;
 	background-image: url("../img/home/home.jpg");
