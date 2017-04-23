@@ -6,36 +6,53 @@ h1.primary-title{
 .navbar-default{
 	background-color: transparent;
 }
-.navbar-default .navbar-nav>li>a{
-	color: #fff;
-	font-size: 24px;
+.navbar-static-top{
+	border-width: 0;
 }
 ul.navbar-nav{
 	margin: 0 auto;
     float: none;
     text-align: center;
-    max-width: 600px;
+    max-width: 950px;
     margin-top: 20px;
 }
-.navbar-static-top{
-	border-width: 0;
+.nav>li>a{
+	padding: 15px 65px;
 }
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover{
+	color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	font-weight: bold;
+}
+/*Higher to Medium*/
 @media (min-width: 992px) {
 	.navbar-default .navbar-nav>li>a{
-		
-	}	
+		font-size: 17px;
+	}
 }
-
-/*
-
-.collapse.navbar-collapse.navbar-right{
-	float: none !important;
-    text-align: center;
+/*Botón de hamburguesa*/
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #fff
 }
-
-.navbar-toggle{
-	border: 1px solid #fff;
-	}*/
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background-color: transparent;
+}
+/*Less to Medium*/
+@media (max-width: 768px) {
+	.nav>li {
+		border-bottom: 1px solid rgba(255,255,255,0.2);
+	}
+	.nav>li:last-child{
+		border-bottom: 0;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+	ul.navbar-nav{
+		margin-top: 0;
+	}
+}
 .primary-image{
 	background-color: black;
 	background-image: url("../img/home/home.jpg");
