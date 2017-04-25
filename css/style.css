@@ -2,6 +2,9 @@ h1.primary-title{
 	font-size: 63px;
 	margin-bottom: 45px;
 }
+.jumbotron{
+	background-color: #fff;
+}
 /*home*/
 .navbar-default{
 	background-color: transparent;
@@ -143,3 +146,30 @@ ul.navbar-nav{
 	}
 }
 /*Portafolio*/
+/* style for crop image */
+.portafolio-photo {
+  position: relative;
+  width: auto;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 270px;
+}
+.portafolio-photo img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.portafolio-photo img.portrait {
+  width: 100%;
+  height: auto;
+}	
+/* end style for crop image */
+.big-photo{
+	height: 570px; /* portafolio-photo * 2 + 30 de margin (top + bottom)*/
+}
