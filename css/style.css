@@ -177,3 +177,7 @@ ul.navbar-nav{
 .dafta-footer .social-wrapper{
 	margin-top: 100px;
 }
+/*Modal del portafolio*/
+.portafolio-modal .modal-header{
+	border-bottom: 0;
+}
