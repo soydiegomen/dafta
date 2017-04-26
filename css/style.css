@@ -1,9 +1,9 @@
 h1.primary-title{
 	font-size: 63px;
-	margin-bottom: 45px;
+	margin: 45px 0;
 }
-.jumbotron{
-	background-color: #fff;
+.contacto, .portafolio, .trayectoria{
+	margin-top: 45px;
 }
 /*home*/
 .navbar-default{
@@ -63,18 +63,12 @@ ul.navbar-nav{
 	background-position: center;
 	height: 100vh;
 }
-.trayectoria .jumbotron{
-	background-color: #fff;
-}
-.trayectoria h1{
-	margin-top: 10px;
-}
-.trayectoria img{
-	
+.trayectoria img{	
 	margin-bottom: 35px;
 }
 .trayectoria p{
 	font-size: 27px;
+	font-weight: 200;
 }
 .portafolio-item{
 	margin-bottom: 15px;
@@ -106,21 +100,19 @@ ul.navbar-nav{
 .contact-info i{
 	width: 30px;
 }
-.home-footer{
-	margin-top: 180px;
-	font-size: 35px;
-	margin-bottom: 50px;
-}
-.home-footer li{
-	margin-right: 20px;
-}
-.home-footer li:last-child{
-	margin-right: 0;
-}
 .social-wrapper{
+	margin-top: 180px;
+	margin-bottom: 50px;
+	padding-top: 10px;
 	max-width: 400px;
 	border-top: #fff 2px solid;
-    padding-top: 10px;
+}
+.social-wrapper li{
+	margin-right: 20px;
+	font-size: 35px;
+}
+.social-wrapper li:last-child{
+	margin-right: 0;
 }
 /*Dafta Menú*/
 .navbar-dafta .navbar-nav>li>a, .navbar-dafta .navbar-nav>li>a:hover{
@@ -172,4 +164,16 @@ ul.navbar-nav{
 /* end style for crop image */
 .big-photo{
 	height: 570px; /* portafolio-photo * 2 + 30 de margin (top + bottom)*/
+}
+.dafta-title{
+
+}
+.dafta-footer a{
+	color: #333;
+}
+.dafta-footer .social-wrapper{
+	border-color: #333;
+}
+.dafta-footer .social-wrapper{
+	margin-top: 100px;
 }
