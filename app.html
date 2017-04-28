@@ -16,13 +16,12 @@
     <meta property="og:image:width" content="1098"/>
     <meta property="og:image:height" content="626"/>
     <!-- end FB Meta tags -->
-    <title>Chailate</title>
-
+    <title>Ulises Dafta</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/chai-style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="http://chailate.com/img//home/favicon.ico" type="image/x-icon" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,115 +31,62 @@
     <![endif]-->
   </head>
   <body ng-app="chaiApp">
-    <header>
-      <nav class="navbar navbar-default chai-dark-color">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand chai-brand-logo" href="/">
-              <img src="img/home/taza-chai.png" alt="Chailate" class="img-responsive">
-            </a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="/">INICIO</a>
-              </li>
-              <li>
-                <a href="/#servicios">SERVICIOS</a>
-              </li>
-              <li>
-                <a href="/#trabajo">PORTAFOLIO</a>
-              </li>
-              <li>
-                <a href="/#contacto">CONTACTO</a>
-              </li>
-              <li>
-                <a href="http://www.chailate.com/blog/">BLOG</a>
-              </li>
-              <li>
-                <div id="fb-top-menu">
-                  
-                </div>
-              </li>
-            </ul>
-          </div><!-- /.navbar-collapse-->
-        </div><!-- /.container-fluid -->
-      </nav>
-    </header>
+    <nav class="navbar navbar-default navbar-static-top navbar-dafta">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">PORTAFOLIO</a></li>
+            <li><a href="#about">TRAYECTORIA</a></li>
+            <li><a href="#contact">CLASES</a></li>
+            <li><a href="#contact">CONTACTANOS</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
     <loading-indicator></loading-indicator>
     <div ng-if="!isRouteLoading" ng-view autoscroll="true">
       <!-- Page content. Using angular for load -->
     </div>
     <!-- hide-footer and show-footer are css classes for hide and show the footer while the view is loading
     and avoid UX issues-->
-    <footer ng-if="!isRouteLoading" class="chai-dark-color hide-footer" ng-class="'show-footer'">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1>Cuentanos sobre tu proyecto</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>¿tienes un evento, una empresa o un proyecto que deseas crear? Cuentanos de él nos encantará trabajar contigo.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center footer-contact">
-            <a href="/#contacto" class="btn btn-primary btn-lg coco-color ">Empecemos a trabajar juntos</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <ul class="footer-menu list-unstyled list-inline">
-              <li>
-                <a href="/">INICIO</a>|
-              </li>
-              <li>
-                <a href="/#servicios">SERVICIOS</a>|
-              </li>
-              <li>
-                <a href="/#trabajo">PORTAFOLIO</a>|
-              </li>
-              <li>
-                <a href="/#contacto">CONTACTANOS</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <div id="fb-bottom">
-              <ul class="social-footer list-unstyled list-inline">
-                <li>
-                  <a href="https://twitter.com/chailateagencia" class="tw-link">
-                    <i class="fa fa-twitter fa-lg"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/chailateagencia/" class="ins-link">
-                    <i class="fa fa-instagram fa-lg"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/chailateagencia/" class="fb-link">
-                    <i class="fa fa-facebook fa-lg"></i>
-                  </a>
-                </li>
-                <li>
-                  <div class="fb-like" data-href="https://www.facebook.com/chailateagencia/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
-                </li>
-              </ul>
+    <footer ng-if="!isRouteLoading" class="hide-footer" ng-class="'show-footer'">
+      <div class="dafta-footer text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="social-wrapper center-block">
+                  <ul class="list-inline">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-facebook fa-lg"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-instagram fa-lg"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-pinterest fa-lg"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter fa-lg"></i>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- end home-footer -->
+              </div>
             </div>
           </div>
         </div>

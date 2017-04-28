@@ -137,17 +137,15 @@ ul.navbar-nav{
 		color: #fff;
 	}
 }
-/*Portafolio*/
+
 /* style for crop image */
-.portafolio-photo {
+.cropped-image {
   position: relative;
   width: auto;
   overflow: hidden;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  height: 270px;
 }
-.portafolio-photo img {
+
+.cropped-image img {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -157,9 +155,15 @@ ul.navbar-nav{
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
 }
-.portafolio-photo img.portrait {
+.cropped-image img.portrait {
   width: 100%;
   height: auto;
+}
+/*Portafolio*/
+.portafolio-photo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 270px;
 }	
 /* end style for crop image */
 .big-photo{
@@ -187,4 +191,25 @@ ul.navbar-nav{
 	    width: 900px;
 	    width: 930px;
 	}
+}
+/*trayectoria*/
+.trayctoria-header{
+	background-color: #0C0C0C;
+}
+.trayectoria-info .cropped-image{
+	height: 300px;
+	margin: 0 20px;
+}
+.trayectoria-info .image-tools{
+	height: 400px;
+}
+.trayectoria-info p{
+	font-size: 1.2em;
+    line-height: 1.9em;
+}
+.trayectoria-info .row{
+	margin-bottom: 30px;
+}
+.trayectoria-info .row:last-child{
+	margin-bottom: 0;
 }
