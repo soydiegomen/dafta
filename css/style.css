@@ -181,3 +181,10 @@ ul.navbar-nav{
 .portafolio-modal .modal-header{
 	border-bottom: 0;
 }
+/*Higher to Medium*/
+@media (min-width: 992px) {
+	.modal-lg {
+	    width: 900px;
+	    width: 930px;
+	}
+}
