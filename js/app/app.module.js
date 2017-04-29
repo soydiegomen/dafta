@@ -4,6 +4,7 @@
 		'chaiApp.core',
 		'chaiApp.widgets',
 		'chaiApp.home',
-		'chaiApp.trayect'
+		'chaiApp.trayect',
+		'chaiApp.clases'
 	]);
 })();

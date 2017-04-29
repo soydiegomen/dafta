@@ -5,6 +5,10 @@ h1.primary-title{
 .contacto, .portafolio, .trayectoria{
 	margin-top: 45px;
 }
+.dafta-content{
+	font-size: 1.2em;
+	line-height: 1.9em;
+}
 /*home*/
 .navbar-default{
 	background-color: transparent;
@@ -196,7 +200,7 @@ ul.navbar-nav{
 .trayctoria-header{
 	background-color: #0C0C0C;
 }
-.trayectoria-info .cropped-image{
+.trayectoria-info .cropped-image, .dafta-content .cropped-image{
 	height: 300px;
 	margin: 0 20px;
 }
@@ -212,4 +216,21 @@ ul.navbar-nav{
 }
 .trayectoria-info .row:last-child{
 	margin-bottom: 0;
+}
+/*Clases*/
+.list-group .list-group-item.active{
+	background-color: #333;
+	border-color: #333;
+}
+.clases-info .row{
+	margin-bottom: 50px;
+}
+.clases-info .row:last-child{
+	margin-bottom: 0;
+}
+.clases-header{
+	margin-bottom: 30px;
+}
+.temario-list{
+	margin-top: 50px;
 }

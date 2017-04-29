@@ -1,17 +1,17 @@
 ( function() {
 	'use strict';
 
-	angular.module('chaiApp.trayect').controller('TrayectCtrl', TrayectCtrl);
+	angular.module('chaiApp.clases').controller('ClasesCtrl', ClasesCtrl);
 
 	/**@ngInject*/
-	function TrayectCtrl(){
+	function ClasesCtrl(){
 		var homeCtrl = this;
 
 		//Initialize controller
 		activate();
 
 		function activate(){
-			console.log('Activated TrayectCtrl');	
+			console.log('Activated ClasesCtrl');	
 		}
 	}
 })();
