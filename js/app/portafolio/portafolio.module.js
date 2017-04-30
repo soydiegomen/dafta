@@ -1,4 +1,4 @@
 ( function() {
 	'use strict';
-	angular.module('chaiApp.portafolio', []);
+	angular.module('chaiApp.portafolio', ['ui.bootstrap']);
 })();
