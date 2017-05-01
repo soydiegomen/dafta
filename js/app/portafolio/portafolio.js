@@ -6,15 +6,30 @@
 	ModalCtrl.$inject = ['$scope', '$uibModalInstance'];
 
 	function ModalCtrl($scope, $uibModalInstance){
-		$scope.agree = function () {
-	      //send the status as true
-	      $uibModalInstance.close( true );
-	    };
+		var modalCtrl = this;
+		modalCtrl.close = close;
+		modalCtrl.slides = [];
+		modalCtrl.myInterval = 5000;
+		modalCtrl.noWrapSlides = false;
+		modalCtrl.active = 0;
+		var currIndex = 0;
 
-	    $scope.disagree = function () {
-	      //send the status as false
-	      $uibModalInstance.close( false );
-	    };
+		function close(){
+			$uibModalInstance.close( true );
+		}
+
+		function addSlide() {
+			var newWidth = 600 + modalCtrl.slides.length + 1;
+			modalCtrl.slides.push({
+			  image: '//unsplash.it/' + newWidth + '/300',
+			  text: ['Nice image','Awesome photograph','That is so cool','I love that'][modalCtrl.slides.length % 4],
+			  id: currIndex++
+			});
+		}
+
+		for (var i = 0; i < 4; i++) {
+		    addSlide();
+		}
 	}
 
 	angular.module('chaiApp.portafolio').controller('PortafolioCtrl', PortafolioCtrl);
@@ -40,12 +55,10 @@
 
 		function doClick(){
 			var modalInstance = $uibModal.open({
-		        //to set this true, you will need to add ngAnimate module
-		        animation: true,
-		        // templateUrl: 'myModalContent.html',
 		        templateUrl: 'js/app/portafolio/modal-portafolio.html',
 		        controller: 'ModalCtrl',
-		        size: 'md'
+		        controllerAs: 'modalCtrl',
+		        size: 'lg'
 		    });
 		}
 	}
