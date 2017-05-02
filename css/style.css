@@ -173,9 +173,6 @@ ul.navbar-nav{
 .big-photo{
 	height: 570px; /* portafolio-photo * 2 + 30 de margin (top + bottom)*/
 }
-.dafta-title{
-
-}
 .dafta-footer a{
 	color: #333;
 }
@@ -184,6 +181,12 @@ ul.navbar-nav{
 }
 .dafta-footer .social-wrapper{
 	margin-top: 100px;
+}
+/* Slider modal */
+.portafolio-modal img{
+	margin:auto;
+	height: auto;
+	width: 100%;
 }
 /*Modal del portafolio*/
 .portafolio-modal .modal-header{

@@ -3,9 +3,9 @@
 
 	angular.module('chaiApp.portafolio').controller('ModalCtrl', ModalCtrl);
 
-	ModalCtrl.$inject = ['$scope', '$uibModalInstance'];
+	ModalCtrl.$inject = ['$scope', '$uibModalInstance','dataservice'];
 
-	function ModalCtrl($scope, $uibModalInstance){
+	function ModalCtrl($scope, $uibModalInstance, dataservice){
 		var modalCtrl = this;
 		modalCtrl.close = close;
 		modalCtrl.slides = [];
@@ -14,22 +14,36 @@
 		modalCtrl.active = 0;
 		var currIndex = 0;
 
+		activate();
+
+		function activate(){
+			dataservice.getPortfolio('aereas').then(fillSlider);
+		}
+
+		function fillSlider(data){
+			//index property must start with 0
+			modalCtrl.slides = data;
+			console.log('slides', data);
+			/*for (var i = 0; i < 4; i++) {
+			    addSlide();
+			}
+			console.log('slides2', modalCtrl.slides);*/
+		}
+
 		function close(){
 			$uibModalInstance.close( true );
 		}
 
+		
 		function addSlide() {
 			var newWidth = 600 + modalCtrl.slides.length + 1;
 			modalCtrl.slides.push({
-			  image: '//unsplash.it/' + newWidth + '/300',
-			  text: ['Nice image','Awesome photograph','That is so cool','I love that'][modalCtrl.slides.length % 4],
-			  id: currIndex++
+			  imageUrl: 'img/portafolio/inter/inter-01.jpg', 
+			  itemid: currIndex++
 			});
 		}
 
-		for (var i = 0; i < 4; i++) {
-		    addSlide();
-		}
+		
 	}
 
 	angular.module('chaiApp.portafolio').controller('PortafolioCtrl', PortafolioCtrl);
@@ -50,12 +64,11 @@
 		function activate(){
 			portafolioCtrl.key = $routeParams.key;
 			console.log('Activated PortafolioCtrl');	
-			//$dialog.dialog({}).open('js/app/portafolio/modal-portafolio.html');  
 		}
 
 		function doClick(){
 			var modalInstance = $uibModal.open({
-		        templateUrl: 'js/app/portafolio/modal-portafolio.html',
+		        templateUrl: 'js/app/portafolio/portafolio-modal.html',
 		        controller: 'ModalCtrl',
 		        controllerAs: 'modalCtrl',
 		        size: 'lg'

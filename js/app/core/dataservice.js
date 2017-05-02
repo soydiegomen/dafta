@@ -18,11 +18,14 @@
 
 		function getPortfolio(type){
 			var serviceUrl = getPortfolioService(type);
+			console.log(type);
+			console.log(serviceUrl);
 			return $http.get(serviceUrl).then(getDesignGallComplete).catch(function (message){
 				console.log('Error in getDesignGallery. Message:' + message);
 			});
 
 			function getDesignGallComplete(data, status, headers, config){
+				console.log('service data', data);
 				return data.data;
 			}
 		}
@@ -88,14 +91,8 @@
 		function getPortfolioService(type){
 			var serviceUrl = '';
 			switch(type){
-				case 'design':
-					serviceUrl = 'jsons/portfolio-diseno.json';
-					break;
-				case 'photos':
-					serviceUrl = 'jsons/portfolio-photos.json';
-					break;
-				case 'webdev':
-					serviceUrl = 'jsons/portfolio-webdev.json';
+				case 'aereas':
+					serviceUrl = 'jsons/portafolio-aereas.json';
 					break;
 			}
 			return serviceUrl;
