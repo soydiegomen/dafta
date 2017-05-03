@@ -1,6 +1,7 @@
 h1.primary-title{
 	font-size: 63px;
 	margin: 45px 0;
+	text-transform: uppercase;
 }
 .contacto, .portafolio, .trayectoria{
 	margin-top: 45px;

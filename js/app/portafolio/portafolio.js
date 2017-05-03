@@ -24,39 +24,28 @@
 			//index property must start with 0
 			modalCtrl.slides = data;
 			console.log('slides', data);
-			/*for (var i = 0; i < 4; i++) {
-			    addSlide();
-			}
-			console.log('slides2', modalCtrl.slides);*/
 		}
 
 		function close(){
 			$uibModalInstance.close( true );
 		}
-
-		
-		function addSlide() {
-			var newWidth = 600 + modalCtrl.slides.length + 1;
-			modalCtrl.slides.push({
-			  imageUrl: 'img/portafolio/inter/inter-01.jpg', 
-			  itemid: currIndex++
-			});
-		}
-
-		
 	}
 
 	angular.module('chaiApp.portafolio').controller('PortafolioCtrl', PortafolioCtrl);
 
-	PortafolioCtrl.$inject = ['$routeParams', '$uibModal'];
+	PortafolioCtrl.$inject = ['$routeParams', '$uibModal', 'dataservice'];
 
 	/**@ngInject*/
-	function PortafolioCtrl($routeParams, $uibModal){
+	function PortafolioCtrl($routeParams, $uibModal, dataservice){
 		var portafolioCtrl = this;
 		portafolioCtrl.click = doClick;
 
-		portafolioCtrl.key = 'uno';
-		console.log('PortafolioCtrl', $uibModal);
+		//Atributos
+		portafolioCtrl.key = null;
+		portafolioCtrl.bigItem = null;
+		portafolioCtrl.firstSection = [];
+		portafolioCtrl.secondSection = [];
+		portafolioCtrl.thirdSection = [];
 
 		//Initialize controller
 		activate();
@@ -64,6 +53,34 @@
 		function activate(){
 			portafolioCtrl.key = $routeParams.key;
 			console.log('Activated PortafolioCtrl');	
+			getPortafolio('aereas');
+		}
+
+		function getPortafolio(type){
+			dataservice.getPortfolio(type).then(setupImageList);
+		}
+
+		function setupImageList(data){
+			//index property must start with 0
+			var items = data;
+			var normalCount = 0;
+			items.forEach(function (item){
+				if(item.type === 'big'){
+					portafolioCtrl.bigItem = item;
+				}else{
+
+					if(normalCount <= 2){
+						portafolioCtrl.firstSection.push(item);	
+					}else if(normalCount <= 4){
+						portafolioCtrl.secondSection.push(item);	
+					}else{
+						portafolioCtrl.thirdSection.push(item);	
+					}
+
+					normalCount++;
+				}
+
+			});
 		}
 
 		function doClick(){
