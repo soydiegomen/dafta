@@ -6,10 +6,10 @@
 	  <div class="col-md-2"></div>
 	</div>
 	<div class="row">
-	  <div class="col-md-4" ng-repeat="slide in portafolioCtrl.firstSection" >
+	  <div class="col-md-4" ng-repeat="item in portafolioCtrl.firstSection" >
 	    <div class="portafolio-photo cropped-image">
-	      <a href="#">
-	        <img ng-src="{{slide.imageUrl}}" alt="Image" />
+	      <a href ng-click="portafolioCtrl.showModal(item);">
+	        <img ng-src="{{item.imageUrl}}" alt="Image" />
 	      </a>
 	    </div>
 	  </div>
@@ -18,17 +18,17 @@
 	<div class="row">
 	  <div class="col-md-8">
 	    <div class="portafolio-photo cropped-image big-photo">
-	      <a href="#">
+	      <a href ng-click="portafolioCtrl.showModal(portafolioCtrl.bigItem);">
 	        <img ng-src="{{portafolioCtrl.bigItem.imageUrl}}" alt="Image" />
 	      </a>
 	    </div>
 	  </div>
 	  <div class="col-md-4">
-	    <div class="row" ng-repeat="slide in portafolioCtrl.secondSection">
+	    <div class="row" ng-repeat="item in portafolioCtrl.secondSection">
 	      <div class="col-md-12">
 	        <div class="portafolio-photo cropped-image">
-	          <a href="#">
-	            <img ng-src="{{slide.imageUrl}}" alt="Image" />
+	          <a href ng-click="portafolioCtrl.showModal(item);">
+	            <img ng-src="{{item.imageUrl}}" alt="Image" />
 	          </a>
 	        </div>
 	      </div>
@@ -38,10 +38,10 @@
 	</div>
 	<!-- end second-portafolio row -->
 	<div class="row">
-	  <div class="col-md-4" ng-repeat="slide in portafolioCtrl.thirdSection" >
+	  <div class="col-md-4" ng-repeat="item in portafolioCtrl.thirdSection" >
 	    <div class="portafolio-photo cropped-image">
-	      <a href="#">
-	        <img ng-src="{{slide.imageUrl}}" alt="Image" />
+	      <a href ng-click="portafolioCtrl.showModal(item);">
+	        <img ng-src="{{item.imageUrl}}" alt="Image" />
 	      </a>
 	    </div>
 	  </div>
@@ -50,6 +50,6 @@
 </div>
 <!-- end container -->
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg text-center" ng-click="portafolioCtrl.click();">
+<!--<button type="button" class="btn btn-primary btn-lg text-center" ng-click="portafolioCtrl.click();">
   Launch demo modal
-</button>
+</button>-->

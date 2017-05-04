@@ -3,7 +3,7 @@
 </div>
 <div class="modal-body portafolio-modal">
 	<!-- Carousel -->
-	<div uib-carousel active="modalCtrl.active" interval="modalCtrl.myInterval" no-wrap="modalCtrl.noWrapSlides">
+	<div uib-carousel active="modalCtrl.active" no-wrap="modalCtrl.noWrapSlides">
       <div uib-slide ng-repeat="slide in modalCtrl.slides" index="slide.itemid">
         <img ng-src="{{slide.imageUrl}}">
         <div class="carousel-caption">
@@ -11,6 +11,6 @@
         </div>
       </div>
     </div>
-
+    <!-- end carousel -->
 </div>
 <!-- modal body -->

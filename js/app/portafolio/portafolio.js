@@ -3,14 +3,14 @@
 
 	angular.module('chaiApp.portafolio').controller('ModalCtrl', ModalCtrl);
 
-	ModalCtrl.$inject = ['$scope', '$uibModalInstance','dataservice'];
+	ModalCtrl.$inject = ['$scope', '$uibModalInstance','dataservice', 'item'];
 
-	function ModalCtrl($scope, $uibModalInstance, dataservice){
+	function ModalCtrl($scope, $uibModalInstance, dataservice, item){
 		var modalCtrl = this;
+
+		modalCtrl.selectItem = selectItem;
 		modalCtrl.close = close;
 		modalCtrl.slides = [];
-		modalCtrl.myInterval = 5000;
-		modalCtrl.noWrapSlides = false;
 		modalCtrl.active = 0;
 		var currIndex = 0;
 
@@ -20,10 +20,15 @@
 			dataservice.getPortfolio('aereas').then(fillSlider);
 		}
 
+		function selectItem(){
+			console.selectItem();
+		}
+
 		function fillSlider(data){
 			//index property must start with 0
 			modalCtrl.slides = data;
-			console.log('slides', data);
+			//Select slide of item selected
+			modalCtrl.active = item.itemid;
 		}
 
 		function close(){
@@ -38,7 +43,7 @@
 	/**@ngInject*/
 	function PortafolioCtrl($routeParams, $uibModal, dataservice){
 		var portafolioCtrl = this;
-		portafolioCtrl.click = doClick;
+		portafolioCtrl.showModal = showModal;
 
 		//Atributos
 		portafolioCtrl.key = null;
@@ -83,12 +88,18 @@
 			});
 		}
 
-		function doClick(){
+		function showModal(item){
+			console.log('item', item);
 			var modalInstance = $uibModal.open({
 		        templateUrl: 'js/app/portafolio/portafolio-modal.html',
 		        controller: 'ModalCtrl',
 		        controllerAs: 'modalCtrl',
-		        size: 'lg'
+		        size: 'lg',
+		        resolve: {
+					item: function () {
+						return item;
+					}
+				}
 		    });
 		}
 	}
