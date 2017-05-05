@@ -83,7 +83,7 @@
 					portafolio.type = 'retrato';
 					portafolio.title = 'retrato';
 				break;
-				case 'corporativa':
+				case 'product-shot':
 					portafolio.type = 'product-shot';
 					portafolio.title = 'product shot';
 				break;

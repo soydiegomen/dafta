@@ -100,7 +100,7 @@
 				case 'retrato':
 					serviceUrl = 'jsons/portafolio-corporativa.json';
 				break;
-				case 'corporativa':
+				case 'product-shot':
 					serviceUrl = 'jsons/portafolio-corporativa.json';
 				break;
 				case 'interiorismo':
