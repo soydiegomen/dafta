@@ -94,6 +94,24 @@
 				case 'aereas':
 					serviceUrl = 'jsons/portafolio-aereas.json';
 					break;
+				case 'corporativa':
+					serviceUrl = 'jsons/portafolio-corporativa.json';
+					break;
+				case 'retrato':
+					serviceUrl = 'jsons/portafolio-corporativa.json';
+				break;
+				case 'corporativa':
+					serviceUrl = 'jsons/portafolio-corporativa.json';
+				break;
+				case 'interiorismo':
+					serviceUrl = 'jsons/portafolio-corporativa.json';
+				break;
+				case 'caricia-luz':
+					serviceUrl = 'jsons/portafolio-corporativa.json';
+				break;
+				case 'cultura':
+					serviceUrl = 'jsons/portafolio-corporativa.json';
+				break;
 			}
 			return serviceUrl;
 		}

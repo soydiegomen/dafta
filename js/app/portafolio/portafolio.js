@@ -3,21 +3,24 @@
 
 	angular.module('chaiApp.portafolio').controller('ModalCtrl', ModalCtrl);
 
-	ModalCtrl.$inject = ['$scope', '$uibModalInstance','dataservice', 'item'];
+	ModalCtrl.$inject = ['$scope', '$uibModalInstance','dataservice', 'item', 'jsonData'];
 
-	function ModalCtrl($scope, $uibModalInstance, dataservice, item){
+	function ModalCtrl($scope, $uibModalInstance, dataservice, item, jsonData){
 		var modalCtrl = this;
 
-		modalCtrl.selectItem = selectItem;
+		//methods
 		modalCtrl.close = close;
+
+		//Attributes
+		modalCtrl.selectItem = selectItem;
 		modalCtrl.slides = [];
 		modalCtrl.active = 0;
-		var currIndex = 0;
 
 		activate();
 
 		function activate(){
-			dataservice.getPortfolio('aereas').then(fillSlider);
+			//dataservice.getPortfolio('aereas').then(fillSlider);
+			fillSlider(jsonData);
 		}
 
 		function selectItem(){
@@ -43,6 +46,7 @@
 	/**@ngInject*/
 	function PortafolioCtrl($routeParams, $uibModal, dataservice){
 		var portafolioCtrl = this;
+		//Methods
 		portafolioCtrl.showModal = showModal;
 
 		//Atributos
@@ -51,17 +55,56 @@
 		portafolioCtrl.firstSection = [];
 		portafolioCtrl.secondSection = [];
 		portafolioCtrl.thirdSection = [];
+		portafolioCtrl.jsonData = [];
 
 		//Initialize controller
 		activate();
 
 		function activate(){
-			portafolioCtrl.key = $routeParams.key;
 			console.log('Activated PortafolioCtrl');	
-			getPortafolio('aereas');
+			var generalData = getGeneralData($routeParams.key);
+			portafolioCtrl.key = generalData.title;
+			//Call service
+			setupPortafolio(generalData.type);
 		}
 
-		function getPortafolio(type){
+		function getGeneralData(key){
+			var portafolio = {};
+			switch(key){
+				case 'aereas':
+					portafolio.type = 'aereas';
+					portafolio.title = 'aéreas';
+				break;
+				case 'corporativa':
+					portafolio.type = 'corporativa';
+					portafolio.title = 'imagen corporativa';
+				break;
+				case 'retrato':
+					portafolio.type = 'retrato';
+					portafolio.title = 'retrato';
+				break;
+				case 'corporativa':
+					portafolio.type = 'product-shot';
+					portafolio.title = 'product shot';
+				break;
+				case 'interiorismo':
+					portafolio.type = 'interiorismo';
+					portafolio.title = 'interiorismo';
+				break;
+				case 'caricia-luz':
+					portafolio.type = 'caricia-luz';
+					portafolio.title = 'caricia de luz';
+				break;
+				case 'cultura':
+					portafolio.type = 'cultura';
+					portafolio.title = 'cultura';
+				break;
+			}
+
+			return portafolio;
+		}
+
+		function setupPortafolio(type){
 			dataservice.getPortfolio(type).then(setupImageList);
 		}
 
@@ -86,18 +129,24 @@
 				}
 
 			});
+
+			portafolioCtrl.jsonData = data;
 		}
 
 		function showModal(item){
-			console.log('item', item);
 			var modalInstance = $uibModal.open({
 		        templateUrl: 'js/app/portafolio/portafolio-modal.html',
 		        controller: 'ModalCtrl',
 		        controllerAs: 'modalCtrl',
 		        size: 'lg',
 		        resolve: {
+		        	//selected item
 					item: function () {
 						return item;
+					},
+					//list of images for carousel
+					jsonData: function () {
+						return portafolioCtrl.jsonData;
 					}
 				}
 		    });

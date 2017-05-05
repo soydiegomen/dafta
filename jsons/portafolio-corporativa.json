@@ -1,0 +1,47 @@
+[
+	{
+		"itemid" : 0,
+		"imageUrl": "img/portafolio/inter/inter-01.jpg",
+		"type": "normal"
+	},
+	{
+		"itemid" : 1,
+		"imageUrl": "img/portafolio/inter/inter-01.jpg",
+		"type": "normal"
+	},	
+	{
+		"itemid" : 2,
+		"imageUrl": "img/portafolio/inter/inter-01.jpg",
+		"type": "normal"
+	},
+	{
+		"itemid" : 3,
+		"imageUrl": "img/portafolio/inter/inter-01.jpg",
+		"type": "big"
+	},
+	{
+		"itemid" : 4,
+		"imageUrl": "img/portafolio/inter/inter-02.jpg",
+		"type": "normal"
+	},	
+	{
+		"itemid" : 5,
+		"imageUrl": "img/portafolio/inter/inter-03.jpg",
+		"type": "normal"
+	},
+	{
+		"itemid" : 6,
+		"imageUrl": "img/portafolio/inter/inter-01.jpg",
+		"type": "normal"
+	},
+	{
+		"itemid" : 7,
+		"imageUrl": "img/portafolio/inter/inter-02.jpg",
+		"type": "normal"
+	},	
+	{
+		"itemid" : 8,
+		"imageUrl": "img/portafolio/inter/inter-03.jpg",
+		"type": "normal"
+	}	
+]
