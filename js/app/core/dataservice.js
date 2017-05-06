@@ -98,7 +98,7 @@
 					serviceUrl = 'jsons/portafolio-corporativa.json';
 					break;
 				case 'retrato':
-					serviceUrl = 'jsons/portafolio-corporativa.json';
+					serviceUrl = 'jsons/portafolio-retrato.json';
 				break;
 				case 'product-shot':
 					serviceUrl = 'jsons/portafolio-producto.json';
@@ -107,10 +107,10 @@
 					serviceUrl = 'jsons/portafolio-interiorismo.json';
 				break;
 				case 'caricia-luz':
-					serviceUrl = 'jsons/portafolio-corporativa.json';
+					serviceUrl = 'jsons/series-caricia.json';
 				break;
 				case 'cultura':
-					serviceUrl = 'jsons/portafolio-corporativa.json';
+					serviceUrl = 'jsons/series-cultura.json';
 				break;
 			}
 			return serviceUrl;

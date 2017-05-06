@@ -1,0 +1,42 @@
+[
+	{
+		"itemid" : 0,
+		"imageUrl": "img/series/caricia/001.jpg",
+		"type": "normal"
+	},
+	{
+		"itemid" : 1,
+		"imageUrl": "img/series/caricia/002.png",
+		"type": "normal"
+	},	
+	{
+		"itemid" : 2,
+		"imageUrl": "img/series/caricia/003.png",
+		"type": "normal"
+	},
+	{
+		"itemid" : 3,
+		"imageUrl": "img/series/caricia/004.png",
+		"type": "big"
+	},
+	{
+		"itemid" : 4,
+		"imageUrl": "img/series/caricia/005.jpg",
+		"type": "normal"
+	},	
+	{
+		"itemid" : 5,
+		"imageUrl": "img/series/caricia/006.jpg",
+		"type": "normal"
+	},
+	{
+		"itemid" : 6,
+		"imageUrl": "img/series/caricia/009.png",
+		"type": "normal"
+	},
+	{
+		"itemid" : 7,
+		"imageUrl": "img/series/caricia/014.png",
+		"type": "normal"
+	}
+]

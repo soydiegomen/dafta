@@ -164,6 +164,12 @@ ul.navbar-nav{
   width: 100%;
   height: auto;
 }
+/*Home portafolio*/
+.home-photo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 300px;
+}	
 /*Portafolio*/
 .portafolio-photo {
   margin-top: 15px;
