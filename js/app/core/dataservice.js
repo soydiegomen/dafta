@@ -101,10 +101,10 @@
 					serviceUrl = 'jsons/portafolio-corporativa.json';
 				break;
 				case 'product-shot':
-					serviceUrl = 'jsons/portafolio-corporativa.json';
+					serviceUrl = 'jsons/portafolio-producto.json';
 				break;
 				case 'interiorismo':
-					serviceUrl = 'jsons/portafolio-corporativa.json';
+					serviceUrl = 'jsons/portafolio-interiorismo.json';
 				break;
 				case 'caricia-luz':
 					serviceUrl = 'jsons/portafolio-corporativa.json';

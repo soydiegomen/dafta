@@ -1,47 +1,47 @@
 [
 	{
 		"itemid" : 0,
-		"imageUrl": "img/portafolio/inter/inter-01.jpg",
+		"imageUrl": "img/portafolio/corporativa/001.jpg",
 		"type": "normal"
 	},
 	{
 		"itemid" : 1,
-		"imageUrl": "img/portafolio/inter/inter-01.jpg",
+		"imageUrl": "img/portafolio/corporativa/002.jpg",
 		"type": "normal"
 	},	
 	{
 		"itemid" : 2,
-		"imageUrl": "img/portafolio/inter/inter-01.jpg",
+		"imageUrl": "img/portafolio/corporativa/003.jpg",
 		"type": "normal"
 	},
 	{
 		"itemid" : 3,
-		"imageUrl": "img/portafolio/inter/inter-01.jpg",
+		"imageUrl": "img/portafolio/corporativa/004.jpg",
 		"type": "big"
 	},
 	{
 		"itemid" : 4,
-		"imageUrl": "img/portafolio/inter/inter-02.jpg",
+		"imageUrl": "img/portafolio/corporativa/005.jpg",
 		"type": "normal"
 	},	
 	{
 		"itemid" : 5,
-		"imageUrl": "img/portafolio/inter/inter-03.jpg",
+		"imageUrl": "img/portafolio/corporativa/006.jpg",
 		"type": "normal"
 	},
 	{
 		"itemid" : 6,
-		"imageUrl": "img/portafolio/inter/inter-01.jpg",
+		"imageUrl": "img/portafolio/corporativa/007.jpg",
 		"type": "normal"
 	},
 	{
 		"itemid" : 7,
-		"imageUrl": "img/portafolio/inter/inter-02.jpg",
+		"imageUrl": "img/portafolio/corporativa/010.jpg",
 		"type": "normal"
 	},	
 	{
 		"itemid" : 8,
-		"imageUrl": "img/portafolio/inter/inter-03.jpg",
+		"imageUrl": "img/portafolio/corporativa/008.png",
 		"type": "normal"
 	}	
 ]

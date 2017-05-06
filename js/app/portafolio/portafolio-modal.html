@@ -6,9 +6,6 @@
 	<div uib-carousel active="modalCtrl.active" no-wrap="modalCtrl.noWrapSlides">
       <div uib-slide ng-repeat="slide in modalCtrl.slides" index="slide.itemid">
         <img ng-src="{{slide.imageUrl}}">
-        <div class="carousel-caption">
-          <h4>Slide {{slide.itemid}}</h4> 
-        </div>
       </div>
     </div>
     <!-- end carousel -->
