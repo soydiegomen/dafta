@@ -42,6 +42,10 @@ ul.navbar-nav{
 	.navbar-default .navbar-nav>li>a{
 		font-size: 17px;
 	}
+	.nav>li>a{
+	    width: 233px;
+    	padding: 15px 15px;
+	}
 }
 /*Botón de hamburguesa*/
 .navbar-default .navbar-toggle .icon-bar{
