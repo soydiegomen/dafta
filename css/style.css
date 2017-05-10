@@ -144,7 +144,7 @@ ul.navbar-nav{
 /*Less to Medium*/
 @media (max-width: 768px) {
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form{
-		background-color: rgb(51, 51, 51);
+		background-color: rgba(51, 51, 51, .8);
 	}
 	.navbar-dafta .navbar-nav>li>a, .navbar-dafta .navbar-nav>li>a:hover{
 		color: #fff;
