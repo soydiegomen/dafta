@@ -210,6 +210,9 @@ ul.navbar-nav{
 .portafolio-modal .modal-header{
 	border-bottom: 0;
 }
+.modal-header .close {
+    margin-top: -10px;
+}
 /*Higher to Medium*/
 @media (min-width: 992px) {
 	.modal-lg {
@@ -239,6 +242,9 @@ ul.navbar-nav{
 	margin-bottom: 0;
 }
 /*Clases*/
+.clases-primary-paragraph{
+	margin-top: 30px;
+}
 .list-group .list-group-item.active{
 	background-color: #333;
 	border-color: #333;

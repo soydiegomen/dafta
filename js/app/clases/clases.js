@@ -7,6 +7,11 @@
 	function ClasesCtrl(){
 		var homeCtrl = this;
 
+		//Attributes
+		this.detailsEncuadre = false;
+		this.detailsIluminacion = false;
+		this.detailsTemario = false;
+
 		//Initialize controller
 		activate();
 

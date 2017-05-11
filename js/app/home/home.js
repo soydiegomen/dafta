@@ -3,10 +3,10 @@
 
 	angular.module('chaiApp.home').controller('HomeCtrl', HomeCtrl);
 
-	HomeCtrl.$inject = ['$routeParams'];
+	HomeCtrl.$inject = ['$routeParams', '$window'];
 
 	/**@ngInject*/
-	function HomeCtrl($routeParams){
+	function HomeCtrl($routeParams, $window){
 		var homeCtrl = this;
 
 		//Initialize controller
@@ -14,6 +14,7 @@
 
 		function activate(){
 			console.log('Activated HomeCtrl');	
+			$window.location.href = '.';
 		}
 	}
 })();

@@ -1,13 +1,13 @@
 <div class="container dafta-content clases-info">
-	<div class="row text-center">
+	<div class="row ">
 		<div class="col-md-12">
 			<div class="clases-header">
-				<h1 class="primary-title">TALLER DE FOTOGRAFÍA PROFESIONAL</h1>
-				<h3>Los ojos no ven lo que la cabeza no sabe</h3>
-				<p>
-					Taller impartido por Uises Dafta y su equipo que proporciona todas las herramientas teóricas y técnicas para formar fotógrafos profesionales en áreas de la fotografía artística y comercial. Si bien es esencial conocer una buena estructura teórica, la metodología de aprendizaje se basa en la práctica a través de lo que la vida cotidiana nos proporciona ...
+				<h1 class="primary-title text-center">TALLER DE FOTOGRAFÍA PROFESIONAL</h1>
+				<h3 class="text-center">Los ojos no ven lo que la cabeza no sabe</h3>
+				<p class="clases-primary-paragraph">
+					Taller impartido por Uises Dafta y su equipo que proporciona todas las herramientas teóricas y técnicas para formar fotógrafos profesionales en áreas de la fotografía artística y comercial. Si bien es esencial conocer una buena estructura teórica, la metodología de aprendizaje se basa en la práctica a través de lo que la vida cotidiana nos proporciona, 
+					tal como el comportamiento de la luz, los encuadres y enfoques naturales de nuestro ojo, el modo de trasladarlo a la cámara, así como la espontaneidad en nuestra vida y el sentido estético. De modo que al taller pueden participar desde niños hasta adultos mayores.
 				</p>
-				<a class="btn btn-default btn-lg" href="#" role="button">Ver más</a>
 			</div>
 		</div>
 	</div>
@@ -21,10 +21,20 @@
 		<div class="col-md-6">
 			<h1 class="text-center">ENCUADRE</h1>
 			<p>
-				El encuadre es la posición y el espacio que capta la cámara y forma la imagen fotográfica. El encuadre más natural es el vertical, ya que es la posición del ser humano, sin embargo han existido escuelas que han cambiado la tradición, tal es el caso del estructuralismo, el cual surge en los años 20 del siglo pasado ...
+				El encuadre es la posición y el espacio que capta la cámara y forma la imagen fotográfica. El encuadre más natural es el vertical, ya que es la posición del ser humano, sin embargo han existido escuelas que han cambiado la tradición, tal es el caso del estructuralismo, el cual surge en los años 20 del siglo pasado 
+				<span ng-show="!clasesCtrl.detailsEncuadre">
+					...
+				</span>
+				<span ng-show="clasesCtrl.detailsEncuadre">
+					y se contrapone en buena medida a la tradición barroca, la cual se caracteriza por un estilo saturado y abundancia del adorno; en cambio proporciona puntos de vista oblicuos, primeros planos y el manejo de las sombras. Del estructuralismo germina el minimalismo, cuyas características se basan en la imagen limpia y estática. En los años 30, surge en Holanda el movimiento Bauhaus, que retoma las prácticas del minimalismo pero agrega más dinamismo a las imágenes. No se puede comprender la historia de la técnica y la fotografía sin mirar a la tradición artística, sobre todo basada en la historia de la pintura. Por ejemplo, del Bauhaus, que viene del estructuralismo, se derivarán más adelante el movimiento dadaísta y el surrealismo.
+				</span>
 			</p>
 			<div class="text-center">
-				<a class="btn btn-default" href="#" role="button">Ver más</a>
+				<a class="btn btn-default" href
+					ng-show="!clasesCtrl.detailsEncuadre"
+					ng-click="clasesCtrl.detailsEncuadre = !clasesCtrl.detailsEncuadre">
+					Ver más
+				</a>
 			</div>
 		</div>
 	</div>
@@ -33,10 +43,20 @@
 		<div class="col-md-6">
 			<h1 class="text-center">ILUMINACIÓN</h1>
 			<p>
-				Conocemos el mundo gracias a la luz, los colores son únicamente manifestaciones de ésta, y por lo tanto es el elemento fundamental en la fotografía; los resultados dependerán en buena medida del buen manejo y conocimiento de la luz.  En el taller se conocerán desde los elementos más esenciales de la luz y la iluminación ...
+				Conocemos el mundo gracias a la luz, los colores son únicamente manifestaciones de ésta, y por lo tanto es el elemento fundamental en la fotografía; los resultados dependerán en buena medida del buen manejo y conocimiento de la luz.  En el taller se conocerán desde los elementos más esenciales de la luz y la iluminación
+				<span ng-show="!clasesCtrl.detailsIluminacion">
+					...
+				</span>
+				<span ng-show="clasesCtrl.detailsIluminacion">
+					–su estructura física, el modo de manifestarse en la naturaleza y en el ojo humano–, hasta su manejo técnico dentro de un estudio, la edición en los programas especializados, así como su aprovechamiento con cualquier tipo de cámara en la intemperie.
+				</span>
 			</p>
 			<div class="text-center">
-				<a class="btn btn-default" href="#" role="button">Ver más</a>
+				<a class="btn btn-default" href
+					ng-show="!clasesCtrl.detailsIluminacion"
+					ng-click="clasesCtrl.detailsIluminacion = !clasesCtrl.detailsIluminacion">
+					Ver más
+				</a>
 			</div>
 		</div>
 		<div class="col-md-6">
@@ -63,15 +83,75 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2 text-center">
 			<div class="list-group temario-list">
-			  <a href="#" class="list-group-item active">
-			    	TEMARIO
-			  </a>
-			  <a href="#" class="list-group-item">1. Historia de la fotografía</a>
-			  <a href="#" class="list-group-item">2. Formatos y Tipos de Cámaras: ¿Qué cámara comprar?</a>
-			  <a href="#" class="list-group-item">3. Manejo de la cámara de 35 mm.</a>
-			  <a href="#" class="list-group-item">4. Encuadres, Planos, Puntos de vista</a>
+				<a href="#" class="list-group-item active">
+					TEMARIO
+				</a>
+				<a href="#" class="list-group-item">
+					1. Historia de la fotografía
+				</a>
+				<a href="#" class="list-group-item">
+					2. Formatos y Tipos de Cámaras: ¿Qué cámara comprar?
+				</a>
+				<a href="#" class="list-group-item">
+					3. Manejo de la cámara de 35 mm.
+				</a>
+				<a href="#" class="list-group-item">
+					4. Encuadres, Planos, Puntos de vista
+				</a>
+				<div ng-show="clasesCtrl.detailsTemario">
+					<a href="#" class="list-group-item">
+						5. Luz e iluminación
+					</a>
+					<a href="#" class="list-group-item">
+						6. Profundidad de campo
+					</a>
+					<a href="#" class="list-group-item">
+						7. Velocidades de obturación
+					</a>
+					<a href="#" class="list-group-item">
+						8. Óptica, encuadre y composición
+					</a>
+					<a href="#" class="list-group-item">
+						9. Ley de Tercios
+					</a>
+					<a href="#" class="list-group-item">
+						10. Sistema de Zonas
+					</a>
+					<a href="#" class="list-group-item">
+						11. La secuencia narrativa
+					</a>
+					<a href="#" class="list-group-item">
+						12. Ritmo, color, fuerza, expresión, acción y movimiento
+					</a>
+					<a href="#" class="list-group-item">
+						13. Estilos fotográficos
+					</a>
+					<a href="#" class="list-group-item">
+						14. Cultura Gráfica: museos, literatura, cine.
+					</a>
+					<a href="#" class="list-group-item">
+						15. El estudio fotográfico
+					</a>
+					<a href="#" class="list-group-item">
+						16. Moda y desnudo
+					</a>
+					<a href="#" class="list-group-item">
+						17. Fotogenia y caracterización
+					</a>
+					<a href="#" class="list-group-item">
+						18. Adobe Photoshop
+					</a>
+					<a href="#" class="list-group-item">
+						19. HDR
+					</a>
+					<a href="#" class="list-group-item">
+						20. Portafolio y Book
+					</a>
+				</div>
 			</div>
-			<a class="btn btn-default btn-lg" href="#" role="button">Ver temario completo</a>
+			<a class="btn btn-default btn-lg" href
+				ng-show="!clasesCtrl.detailsTemario"
+				ng-click="clasesCtrl.detailsTemario = !clasesCtrl.detailsTemario">Ver temario completo</a>
 		</div>
 		<div class="col-md-2">
 		</div>
