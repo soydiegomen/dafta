@@ -1,22 +1,25 @@
 [
 	{
 		"itemid" : 0,
-		"imageUrl": "img/portafolio/producto/003.jpg",
-		"type": "normal"
+		"imageUrl": "img/portafolio/producto/011.png",
+		"type": "normal",
+		"class": "custom-portrait"
 	},
 	{
 		"itemid" : 1,
-		"imageUrl": "img/portafolio/producto/002.png",
-		"type": "normal"
-	},	
+		"imageUrl": "img/portafolio/producto/007.png",
+		"type": "normal",
+		"class": "custom-portrait"
+	},
 	{
 		"itemid" : 2,
-		"imageUrl": "img/portafolio/producto/010.png",
-		"type": "normal"
+		"imageUrl": "img/portafolio/producto/009.png",
+		"type": "normal",
+		"class": "custom-portrait"
 	},
 	{
 		"itemid" : 3,
-		"imageUrl": "img/portafolio/producto/011.png",
+		"imageUrl": "img/portafolio/producto/003.jpg",
 		"type": "big"
 	},
 	{
@@ -31,17 +34,19 @@
 	},
 	{
 		"itemid" : 6,
-		"imageUrl": "img/portafolio/producto/007.png",
-		"type": "normal"
-	},
-	{
-		"itemid" : 7,
 		"imageUrl": "img/portafolio/producto/008.jpg",
 		"type": "normal"
 	},	
 	{
+		"itemid" : 7,
+		"imageUrl": "img/portafolio/producto/002.png",
+		"type": "normal",
+		"class": "custom-portrait"
+	},	
+	{
 		"itemid" : 8,
-		"imageUrl": "img/portafolio/producto/009.png",
-		"type": "normal"
+		"imageUrl": "img/portafolio/producto/010.png",
+		"type": "normal",
+		"class": "custom-portrait"
 	}	
 ]

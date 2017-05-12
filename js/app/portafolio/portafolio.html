@@ -9,7 +9,7 @@
 	  <div class="col-md-4" ng-repeat="item in portafolioCtrl.firstSection" >
 	    <div class="portafolio-photo cropped-image">
 	      <a href ng-click="portafolioCtrl.showModal(item);">
-	        <img ng-src="{{item.imageUrl}}" alt="Image" />
+	        <img ng-src="{{item.imageUrl}}" alt="Image" ng-class="item.class" />
 	      </a>
 	    </div>
 	  </div>
@@ -19,7 +19,7 @@
 	  <div class="col-md-8">
 	    <div class="portafolio-photo cropped-image big-photo">
 	      <a href ng-click="portafolioCtrl.showModal(portafolioCtrl.bigItem);">
-	        <img ng-src="{{portafolioCtrl.bigItem.imageUrl}}" alt="Image" />
+	        <img ng-src="{{portafolioCtrl.bigItem.imageUrl}}" alt="Image" ng-class="portafolioCtrl.bigItem.class" />
 	      </a>
 	    </div>
 	  </div>
@@ -28,7 +28,7 @@
 	      <div class="col-md-12">
 	        <div class="portafolio-photo cropped-image">
 	          <a href ng-click="portafolioCtrl.showModal(item);">
-	            <img ng-src="{{item.imageUrl}}" alt="Image" />
+	            <img ng-src="{{item.imageUrl}}" alt="Image" ng-class="item.class" />
 	          </a>
 	        </div>
 	      </div>
@@ -41,7 +41,7 @@
 	  <div class="col-md-4" ng-repeat="item in portafolioCtrl.thirdSection" >
 	    <div class="portafolio-photo cropped-image">
 	      <a href ng-click="portafolioCtrl.showModal(item);">
-	        <img ng-src="{{item.imageUrl}}" alt="Image" />
+	        <img ng-src="{{item.imageUrl}}" alt="Image" ng-class="item.class" />
 	      </a>
 	    </div>
 	  </div>
@@ -49,7 +49,3 @@
 	<!-- end third-portafolio row -->
 </div>
 <!-- end container -->
-<!-- Button trigger modal -->
-<!--<button type="button" class="btn btn-primary btn-lg text-center" ng-click="portafolioCtrl.click();">
-  Launch demo modal
-</button>-->
