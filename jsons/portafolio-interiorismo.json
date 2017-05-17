@@ -1,33 +1,34 @@
 [
 	{
 		"itemid" : 0,
-		"imageUrl": "img/portafolio/interiorismo/010.jpg",
-		"type": "normal"
-	},
-	{
-		"itemid" : 1,
 		"imageUrl": "img/portafolio/interiorismo/002.jpg",
 		"type": "normal"
 	},	
 	{
-		"itemid" : 2,
-		"imageUrl": "img/portafolio/interiorismo/003.jpg",
+		"itemid" : 1,
+		"imageUrl": "img/portafolio/interiorismo/004.jpg",
 		"type": "normal"
 	},
 	{
-		"itemid" : 3,
-		"imageUrl": "img/portafolio/interiorismo/004.jpg",
-		"type": "big"
-	},
-	{
-		"itemid" : 4,
+		"itemid" : 2,
 		"imageUrl": "img/portafolio/interiorismo/005.jpg",
 		"type": "normal"
 	},	
 	{
-		"itemid" : 5,
+		"itemid" : 3,
+		"imageUrl": "img/portafolio/interiorismo/010.jpg",
+		"type": "big"
+	},
+	{
+		"itemid" : 4,
 		"imageUrl": "img/portafolio/interiorismo/006.jpg",
 		"type": "normal"
+	},
+	{
+		"itemid" : 5,
+		"imageUrl": "img/portafolio/interiorismo/009.jpg",
+		"type": "normal",
+		"class": "portrait"
 	},
 	{
 		"itemid" : 6,
@@ -36,12 +37,13 @@
 	},
 	{
 		"itemid" : 7,
-		"imageUrl": "img/portafolio/interiorismo/008.jpg",
+		"imageUrl": "img/portafolio/interiorismo/003.jpg",
 		"type": "normal"
-	},	
+	},
 	{
 		"itemid" : 8,
-		"imageUrl": "img/portafolio/interiorismo/009.jpg",
-		"type": "normal"
-	}	
+		"imageUrl": "img/portafolio/interiorismo/008.jpg",
+		"type": "normal",
+		"class": "portrait"
+	}
 ]

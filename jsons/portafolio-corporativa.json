@@ -16,13 +16,13 @@
 	},	
 	{
 		"itemid" : 3,
-		"imageUrl": "img/portafolio/corporativa/003.jpg",
-		"type": "normal"
+		"imageUrl": "img/portafolio/corporativa/004.jpg",
+		"type": "big"
 	},
 	{
 		"itemid" : 4,
-		"imageUrl": "img/portafolio/corporativa/004.jpg",
-		"type": "big"
+		"imageUrl": "img/portafolio/corporativa/003.jpg",
+		"type": "normal"
 	},
 	{
 		"itemid" : 5,
@@ -42,8 +42,8 @@
 	},	
 	{
 		"itemid" : 8,
-		"imageUrl": "img/portafolio/corporativa/008.png",
+		"imageUrl": "img/portafolio/corporativa/008.jpg",
 		"type": "normal",
-		"class": "custom-portrait"
+		"class": "portrait"
 	}	
 ]
