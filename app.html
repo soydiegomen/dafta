@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!--FB Meta tags -->
-    <meta property="fb:app_id" content="1838948626325222" />
-    <meta property="og:title" content="Chailate - Agencia de diseño"/>
+    <!--<meta property="fb:app_id" content="" />-->
+    <meta property="og:title" content="Ulises Dafta | Fotográfo"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://chailate.com/"/>
-    <meta property="og:description" content="Somos una agencia innovadora donde hacemos de nuestra pasión, el trabajo perfecto" />
-    <meta property="og:site_name" content="Chailate"/>
-    <meta property="og:image" content="http://chailate.com/img/home/chailate-share.jpg"/>
-    <meta property="og:image:width" content="1098"/>
-    <meta property="og:image:height" content="626"/>
+    <meta property="og:url" content="http://www.ulisesdafta.com/"/>
+    <meta property="og:description" content="Su trayectoria abarca un amplio matiz de especialidades dentro del ámbito de la fotografía y la docencia, donde ha cubierto exhibiciones, eventos de toda índole y divulgado su trabajo en los periódicos más importantes de México y en diversas revistas" />
+    <meta property="og:site_name" content="Ulises Dafta | Fotográfo"/>
+    <meta property="og:image" content="http://www.ulisesdafta.com/img/home/home.jpg"/>
+    <meta property="og:image:width" content="1920"/>
+    <meta property="og:image:height" content="1024"/>
     <!-- end FB Meta tags -->
     <title>Ulises Dafta</title>
     <!-- Bootstrap -->
@@ -31,7 +31,7 @@
     <![endif]-->
   </head>
   <body ng-app="chaiApp">
-    <div class="text-center visible-lg">
+    <div class="text-center hidden">
       <img src="img/home/logo.png" alt="logo" class="img-responsive center-block dafta-logo">
     </div>
     
@@ -77,65 +77,21 @@
         </div>
       </div>
     </footer>
+    <!-- Vendors -->
+    <script src="js/build-grunt/min/vendors.js"></script>
+    <!-- chailate bootstraper -->
+    <script src="js/build-grunt/min/app.js"></script>
+
     <!-- script de google analytics -->
-    
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      //Define de appid for google analytics
-      //ga('create', 'UA-77063455-1', 'auto');
-      //ga('send', 'pageview');
+      ga('create', 'UA-99312284-1', 'auto');
+      ga('send', 'pageview');
+
     </script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!--<script src="js/vendors/jquery-11.min.js"></script>-->
-    <!--<script src="js/vendors/bootstrap.min.js"></script>-->
-    
-    <!-- Angular scripts -->
-    <!--<script src="js/vendors/angular.min.js"></script>
-    <script src="js/vendors/angular-route.min.js"></script>-->
-    <!-- Vendors -->
-    <script src="js/build-grunt/min/vendors.js"></script>
-    <!-- chailate bootstraper -->
-    <script src="js/build-grunt/min/app.js"></script>
-    <!--
-    <script src="js/app/app.module.js"></script>
-    -->
-
-    <!-- Reusable Blocks/Modules --><!--
-    <script src="js/app/blocks/router/router.module.js"></script>
-    <script src="js/app/blocks/router/routehelper.js"></script>
-    -->
-
-    <!--core module --><!--
-    <script src="js/app/core/core.module.js"></script>
-    <script src="js/app/core/config.js"></script>
-    <script src="js/app/core/dataservice.js"></script>
-    <script src="js/app/core/analyticsservice.js"></script>
-    -->
-
-    <!--widgets --><!--
-    <script src="js/app/widgets/widgets.module.js"></script>
-    <script src="js/app/widgets/loadingIndicator/loadingIndicator.js"></script>
-    -->
-
-    <!-- home --><!--
-    <script src="js/app/home/home.module.js"></script>
-    <script src="js/app/home/config.route.js"></script>
-    <script src="js/app/home/home.js"></script>
-    -->
-
-    <!-- FBSDK Javascript -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      //Define appid for facebook
-      /*js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.7&appId=1838948626325222";
-      fjs.parentNode.insertBefore(js, fjs);*/
-    }(document, 'script', 'facebook-jssdk'));</script>
   </body>
 </html>
