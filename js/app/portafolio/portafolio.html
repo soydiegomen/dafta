@@ -1,34 +1,34 @@
 <div class="container">
 	<div class="row text-center">
 	  <div class="col-md-8 col-md-offset-2">
-	    <h1 class="primary-title">{{portafolioCtrl.key}}</h1>
+	    <h1 class="primary-title" ng-bind="portafolioCtrl.key"></h1>
 	  </div>
 	  <div class="col-md-2"></div>
 	</div>
 	<div class="row">
-	  <div class="col-md-4" ng-repeat="item in portafolioCtrl.firstSection" >
+	  <div class="col-md-4 col-xs-12" ng-repeat="item in portafolioCtrl.firstSection" >
 	    <div class="portafolio-photo cropped-image">
 	      <a href ng-click="portafolioCtrl.showModal(item);">
-	        <img ng-src="{{item.imageUrl}}" alt="Image" ng-class="item.class" />
+	        <img ng-src="{{item.imageUrl}}" alt="portafolio" ng-class="item.class" />
 	      </a>
 	    </div>
 	  </div>
 	</div>
 	<!-- end first-portafolio row -->
 	<div class="row">
-	  <div class="col-md-8">
+	  <div class="col-md-8 col-xs-12">
 	    <div class="portafolio-photo cropped-image big-photo">
 	      <a href ng-click="portafolioCtrl.showModal(portafolioCtrl.bigItem);">
-	        <img ng-src="{{portafolioCtrl.bigItem.imageUrl}}" alt="Image" ng-class="portafolioCtrl.bigItem.class" />
+	        <img ng-src="{{portafolioCtrl.bigItem.imageUrl}}" alt="portafolio" ng-class="portafolioCtrl.bigItem.class" />
 	      </a>
 	    </div>
 	  </div>
-	  <div class="col-md-4">
+	  <div class="col-md-4 col-xs-12">
 	    <div class="row" ng-repeat="item in portafolioCtrl.secondSection">
 	      <div class="col-md-12">
 	        <div class="portafolio-photo cropped-image">
 	          <a href ng-click="portafolioCtrl.showModal(item);">
-	            <img ng-src="{{item.imageUrl}}" alt="Image" ng-class="item.class" />
+	            <img ng-src="{{item.imageUrl}}" alt="portafolio" ng-class="item.class" />
 	          </a>
 	        </div>
 	      </div>
@@ -38,7 +38,7 @@
 	</div>
 	<!-- end second-portafolio row -->
 	<div class="row">
-	  <div class="col-md-4" ng-repeat="item in portafolioCtrl.thirdSection" >
+	  <div class="col-md-4 col-xs-12" ng-repeat="item in portafolioCtrl.thirdSection" >
 	    <div class="portafolio-photo cropped-image">
 	      <a href ng-click="portafolioCtrl.showModal(item);">
 	        <img ng-src="{{item.imageUrl}}" alt="Image" ng-class="item.class" />
