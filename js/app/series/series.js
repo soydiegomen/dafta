@@ -3,8 +3,10 @@
 
 	angular.module('chaiApp.series').controller('SeriesCtrl', SeriesCtrl);
 
+	SeriesCtrl.$inject = ['analyticsservice'];
+
 	/**@ngInject*/
-	function SeriesCtrl(){
+	function SeriesCtrl(analyticsservice){
 		var homeCtrl = this;
 
 		//Initialize controller
@@ -12,6 +14,8 @@
 
 		function activate(){
 			console.log('Activated SeriesCtrl');	
+			//Tracking google analytics view
+			analyticsservice.trackPageView();
 		}
 	}
 })();

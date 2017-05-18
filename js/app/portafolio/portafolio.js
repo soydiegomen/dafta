@@ -1,6 +1,9 @@
 ( function() {
 	'use strict';
 
+	/*
+	*Modal controller
+	*/
 	angular.module('chaiApp.portafolio').controller('ModalCtrl', ModalCtrl);
 
 	ModalCtrl.$inject = ['$scope', '$uibModalInstance','dataservice', 'item', 'jsonData'];
@@ -12,19 +15,14 @@
 		modalCtrl.close = close;
 
 		//Attributes
-		modalCtrl.selectItem = selectItem;
 		modalCtrl.slides = [];
 		modalCtrl.active = 0;
 
 		activate();
 
 		function activate(){
-			//dataservice.getPortfolio('aereas').then(fillSlider);
+			//Using control parameter 
 			fillSlider(jsonData);
-		}
-
-		function selectItem(){
-			console.selectItem();
 		}
 
 		function fillSlider(data){
@@ -39,12 +37,16 @@
 		}
 	}
 
+	/*
+	*Portafolio controller
+	*/
+
 	angular.module('chaiApp.portafolio').controller('PortafolioCtrl', PortafolioCtrl);
 
-	PortafolioCtrl.$inject = ['$routeParams', '$uibModal', 'dataservice'];
+	PortafolioCtrl.$inject = ['$routeParams', '$uibModal', 'dataservice', 'analyticsservice'];
 
 	/**@ngInject*/
-	function PortafolioCtrl($routeParams, $uibModal, dataservice){
+	function PortafolioCtrl($routeParams, $uibModal, dataservice, analyticsservice){
 		var portafolioCtrl = this;
 		//Methods
 		portafolioCtrl.showModal = showModal;
@@ -66,6 +68,8 @@
 			portafolioCtrl.key = generalData.title;
 			//Call service
 			setupPortafolio(generalData.type);
+			//Tracking google analytics view
+			analyticsservice.trackPageView();
 		}
 
 		function getGeneralData(key){

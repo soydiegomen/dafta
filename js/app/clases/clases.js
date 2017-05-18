@@ -3,8 +3,10 @@
 
 	angular.module('chaiApp.clases').controller('ClasesCtrl', ClasesCtrl);
 
+	ClasesCtrl.$inject = ['analyticsservice'];
+
 	/**@ngInject*/
-	function ClasesCtrl(){
+	function ClasesCtrl(analyticsservice){
 		var homeCtrl = this;
 
 		//Attributes
@@ -17,6 +19,8 @@
 
 		function activate(){
 			console.log('Activated ClasesCtrl');	
+			//Tracking google analytics view
+			analyticsservice.trackPageView();
 		}
 	}
 })();

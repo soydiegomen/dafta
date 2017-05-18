@@ -3,8 +3,10 @@
 
 	angular.module('chaiApp.trayect').controller('TrayectCtrl', TrayectCtrl);
 
+	TrayectCtrl.$inject = ['analyticsservice'];
+
 	/**@ngInject*/
-	function TrayectCtrl(){
+	function TrayectCtrl(analyticsservice){
 		var homeCtrl = this;
 
 		//Initialize controller
@@ -12,6 +14,8 @@
 
 		function activate(){
 			console.log('Activated TrayectCtrl');	
+			//Tracking google analytics view
+			analyticsservice.trackPageView();
 		}
 	}
 })();
