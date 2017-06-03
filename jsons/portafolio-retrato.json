@@ -1,47 +1,52 @@
 [
 	{
 		"itemid" : 0,
-		"imageUrl": "img/series/cultura/001.jpg",
-		"type": "normal"
+		"imageUrl": "img/portafolio/retrato/r13.jpg",
+		"type": "normal",
+		"class": "portrait"
 	},
 	{
 		"itemid" : 1,
-		"imageUrl": "img/series/cultura/002.jpg",
-		"type": "normal"
+		"imageUrl": "img/portafolio/retrato/R9.jpg",
+		"type": "normal",
+		"class": "portrait"
 	},	
 	{
 		"itemid" : 2,
-		"imageUrl": "img/series/cultura/003.jpg",
-		"type": "normal"
+		"imageUrl": "img/portafolio/retrato/R3.jpg",
+		"type": "normal",
+		"class": "portrait"
 	},
 	{
 		"itemid" : 3,
-		"imageUrl": "img/series/cultura/004.jpg",
-		"type": "big"
+		"imageUrl": "img/portafolio/retrato/R4.jpg",
+		"type": "big",
+		"class": "portrait"
 	},
 	{
 		"itemid" : 4,
-		"imageUrl": "img/series/cultura/005.jpg",
+		"imageUrl": "img/portafolio/retrato/R5.jpg",
 		"type": "normal"
-	},	
+	},
 	{
 		"itemid" : 5,
-		"imageUrl": "img/series/cultura/006.jpg",
+		"imageUrl": "img/portafolio/retrato/R6.jpg",
 		"type": "normal"
 	},
 	{
 		"itemid" : 6,
-		"imageUrl": "img/series/cultura/007.jpg",
-		"type": "normal"
+		"imageUrl": "img/portafolio/retrato/r1.jpg",
+		"type": "normal",
+		"class": "portrait"
 	},
 	{
 		"itemid" : 7,
-		"imageUrl": "img/series/cultura/008.jpg",
+		"imageUrl": "img/portafolio/retrato/R8.jpg",
 		"type": "normal"
-	},	
+	},
 	{
 		"itemid" : 8,
-		"imageUrl": "img/series/cultura/009.jpg",
-		"type": "normal"
-	}	
+		"imageUrl": "img/portafolio/retrato/R2.jpg",
+		"type": "normal"		
+	}
 ]
