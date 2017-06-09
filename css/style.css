@@ -207,11 +207,11 @@ ul.navbar-nav{
 .portafolio-photo {
   margin-top: 15px;
   margin-bottom: 15px;
-  height: 270px;
+  height: 340px;
 }	
 /* end style for crop image */
 .big-photo{
-	height: 570px; /* portafolio-photo * 2 + 30 de margin (top + bottom)*/
+	height: 710px; /* portafolio-photo * 2 + 30 de margin (top + bottom)*/
 }
 /*Less to Medium*/
 @media (max-width: 768px) {
@@ -249,8 +249,19 @@ ul.navbar-nav{
 	}
 }
 /*trayectoria*/
+.parallax {
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .trayctoria-header{
 	background-color: #0C0C0C;
+    height: 350px;
+    background-image: url(../img/home/trayectoria.jpg);
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: center;
 }
 .trayectoria-info .cropped-image, .dafta-content .cropped-image{
 	height: 300px;
