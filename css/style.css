@@ -2,6 +2,7 @@ h1.primary-title{
 	font-size: 63px;
 	margin: 45px 0;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 /* Phones*/
 @media (max-width: 768px) {
@@ -33,7 +34,8 @@ ul.navbar-nav{
     float: none;
     text-align: center;
     max-width: 950px;
-    margin-top: 20px;
+    margin-top: 31px;
+    font-weight: bold;
 }
 .nav>li>a{
 	padding: 15px 65px;
@@ -88,9 +90,10 @@ ul.navbar-nav{
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100vh;
+	background-size: 40%;
 }
 .trayectoria img{	
-	margin-bottom: 35px;
+	margin-bottom: 32px;
 }
 .trayectoria p{
 	font-size: 27px;
@@ -192,10 +195,6 @@ ul.navbar-nav{
 .cropped-image img.portrait {
   width: 100%;
   height: auto;
-}
-.cropped-image img.custom-portrait {
-  height: auto;
-  width: 1000px;
 }
 /*Home portafolio*/
 .home-photo {
