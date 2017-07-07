@@ -92,6 +92,17 @@ ul.navbar-nav{
 	height: 100vh;
 	background-size: 40%;
 }
+/* phones */
+@media (max-width: 768px) and (orientation: portrait) {
+	.primary-image{
+		background-size: 160%;
+	}
+}
+@media (max-width: 768px) and (orientation: landscape) {
+	.primary-image{
+		background-size: 86%;
+	}
+}
 .trayectoria img{	
 	margin-bottom: 32px;
 }
@@ -120,8 +131,8 @@ ul.navbar-nav{
 }
 .contact-info{
 	font-size: 24px;
-	padding-top: 20px;
-    margin-left: 20px;
+    padding-top: 60px;
+    margin-left: 171px;
 }
 .contact-info li{
 	margin-bottom: 15px;
