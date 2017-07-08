@@ -35,7 +35,6 @@ ul.navbar-nav{
     text-align: center;
     max-width: 950px;
     margin-top: 31px;
-    font-weight: bold;
 }
 .nav>li>a{
 	padding: 15px 65px;
@@ -95,12 +94,12 @@ ul.navbar-nav{
 /* phones */
 @media (max-width: 768px) and (orientation: portrait) {
 	.primary-image{
-		background-size: 160%;
+		background-size: 143%;
 	}
 }
 @media (max-width: 768px) and (orientation: landscape) {
 	.primary-image{
-		background-size: 86%;
+		background-size: 74%;
 	}
 }
 .trayectoria img{	
