@@ -4,7 +4,6 @@ $(function() {
 
 	function nextSection(){
 		var next = current + 1;
-		console.log("next section");
 		$('.section'+current).removeClass('current');
 		$('body').scrollTo('.section'+next, {duration:600}, {queue:true});
 		$('.section'+next).addClass('current');
@@ -13,7 +12,6 @@ $(function() {
 	function previousSection(){
 		//SCROLL UP
 		var prev = current - 1;
-		console.log("prev section");
 		$('.section'+current).removeClass('current');
 		$('body').scrollTo( '.section' + prev, 600, {queue:true} );
 		$('.section'+prev).addClass('current');	
@@ -40,69 +38,66 @@ $(function() {
 			}
 		}
 	});
-	//POC for change section using scroll. The proble is when interact up and down scroll
-	/*
-	var lastScrollTop = 0;
-	var lastChangeSection = 0;
-	var factorMovimiento = 40;
-	var lastMoveNext = 0;
-	var lastMovePrev = 0;
-	var startPrev = 150;
-	var endPrev = 350;
-	var startNext = 0;
-	var endNext = 200;
+
+	//TODO: Optimizar código, hay mucho código repetido (DRY) y hay validaciones que se deberían hacer
+	//Antes de mover las clases del doom
+	var offset1 = $('.section1').offset();
+	var section1Top = offset1.top;
+
+	var offset2 = $('.section2').offset();
+	var section2Top = offset2.top;
+
+	var offset3 = $('.section3').offset();
+	var section3Top = offset3.top;
+
+	var offset4 = $('.section4').offset();
+	var section4Top = offset4.top;
+	var zonaIntermedia = 50;
+	var isFirstTime = true;
 	$( window ).scroll(function() {
-		var currentStrollTop = window.pageYOffset || document.documentElement.scrollTop;
-		current = $('div.current').data('section');
-		console.log(currentStrollTop);
-		if(currentStrollTop >= 600){
-			console.log("Start!");
-			lastMovePrev = 600;
+
+		if(isFirstTime){
+			var currentStrollTop = window.pageYOffset || document.documentElement.scrollTop;
+			current = $('div.current').data('section');
+			if(currentStrollTop > (section1Top - 50) && currentStrollTop < (section1Top + 50)){
+				current = 1;
+				$('.current').removeClass('current');
+				$('.section1').addClass('current');	
+			}
+
+			if(currentStrollTop > (section2Top - 50) && currentStrollTop < (section2Top + 50)){
+				current = 2;
+				$('.current').removeClass('current');
+				$('.section2').addClass('current');	
+			}
+
+			if(currentStrollTop > (section3Top - 50) && currentStrollTop < (section3Top + 50)){
+				current = 3;
+				$('.current').removeClass('current');
+				$('.section3').addClass('current');	
+			}
+
+			if(currentStrollTop > (section4Top - 50) && currentStrollTop < (section4Top + 50)){
+				current = 4;
+				$('.current').removeClass('current');
+				$('.section4').addClass('current');	
+			}
+
+			isFirstTime = false;
 		}
-	  	
-	  	// 150 > 50
-	  	if(currentStrollTop > startPrev && currentStrollTop < endPrev){
-		  	if((lastMovePrev - factorMovimiento) > currentStrollTop){
-		  		console.log("Is up");
-		  		//console.log(current +" - " + noSections);
-		  		if(true){
-			  		//previousSection();
-			  		moveToPrev();
-			  		console.log("Prev move:" + lastMovePrev);
-			  		console.log("Next move:" + lastMoveNext);
-			  	}
-		  		
-		  	}
-		}
-	  	if(currentStrollTop > startNext && currentStrollTop < endNext){
-		  	if( currentStrollTop > (lastMoveNext + factorMovimiento)){
-		  		console.log("Is down");
-		  		//console.log(current +" - " + noSections);
-		  		if(true){
-			  		//nextSection();
-			  		moveToNext();
-			  		console.log("Next move:" + lastMoveNext);
-			  		console.log("Prev move:" + lastMovePrev);
-			  	}
-		  		
-		  	}
-	  	}
-		
-	  	lastScrollTop = currentStrollTop;
-	  	//e.preventDefault();
-		//return false;
 	});
+	//Con la misma idea de los rangos podría resolver lo del scroll automatico 
+	//disaparado por el evento scroll del mouse 
 
-	function moveToNext(){
-		console.log("Move to next");
-		lastMoveNext += 200;
-		lastMovePrev = lastMoveNext;
-	}
+	$("#linkPortafolio").click(function(){
+		current = 3;
+		$('.current').removeClass('current');
+		$('.section3').addClass('current');	
+	})
 
-	function moveToPrev(){
-		console.log("Move to prev");	
-		lastMovePrev -= 200;
-		lastMoveNext = lastMovePrev;
-	}
-	*/
+	$("#linkContacto").click(function(){
+		current = 4;
+				$('.current').removeClass('current');
+				$('.section4').addClass('current');	
+	})
 });
