@@ -1,0 +1,48 @@
+[
+	{
+		"itemid" : 0,
+		"imageUrl": "img/portafolio/diseno/d1.jpg",
+		"type": "normal"
+	},
+	{
+		"itemid" : 1,
+		"imageUrl": "img/portafolio/diseno/d2.png",
+		"type": "normal"
+	},	
+	{
+		"itemid" : 2,
+		"imageUrl": "img/portafolio/diseno/d3.png",
+		"type": "normal"
+	},
+	{
+		"itemid" : 3,
+		"imageUrl": "img/portafolio/diseno/d12.png",
+		"type": "big"
+	},
+	{
+		"itemid" : 4,
+		"imageUrl": "img/portafolio/diseno/d6.png",
+		"type": "normal"
+	},
+	{
+		"itemid" : 5,
+		"imageUrl": "img/portafolio/diseno/d4.png",
+		"type": "normal"
+	},
+	{
+		"itemid" : 6,
+		"imageUrl": "img/portafolio/diseno/d7.png",
+		"type": "normal"
+	},
+	{
+		"itemid" : 7,
+		"imageUrl": "img/portafolio/diseno/d8.jpg",
+		"type": "normal"
+	},	
+	{
+		"itemid" : 8,		
+		"imageUrl": "img/portafolio/diseno/d11.jpg",
+		"type": "normal",
+		"class": "portrait"
+	}	
+]

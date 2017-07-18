@@ -103,6 +103,10 @@
 					portafolio.type = 'cultura';
 					portafolio.title = 'cultura';
 				break;
+				case 'diseno':
+					portafolio.type = 'diseno';
+					portafolio.title = 'Diseño';
+				break;
 			}
 
 			return portafolio;

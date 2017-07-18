@@ -52,6 +52,9 @@
 				case 'cultura':
 					serviceUrl = 'jsons/series-cultura.json';
 				break;
+				case 'diseno':
+					serviceUrl = 'jsons/portafolio-diseno.json';
+				break;
 			}
 			return serviceUrl;
 		}
