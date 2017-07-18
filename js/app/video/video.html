@@ -1,0 +1,51 @@
+<div class="container">
+	<div class="row text-center">
+	  <div class="col-md-8 col-md-offset-2">
+	    <h1 class="primary-title" ng-bind="videoCtrl.key"></h1>
+	  </div>
+	  <div class="col-md-2"></div>
+	</div>
+	<div class="row">
+	  <div class="col-md-4 col-xs-12" ng-repeat="item in videoCtrl.firstSection" >
+	    <div class="portafolio-photo cropped-image">
+	      <a href ng-click="videoCtrl.showModal(item);">
+	        <img ng-src="{{item.imageUrl}}" alt="portafolio" ng-class="item.class" />
+	      </a>
+	    </div>
+	  </div>
+	</div>
+	<!-- end first-portafolio row -->
+	<div class="row">
+	  <div class="col-md-8 col-xs-12">
+	    <div class="portafolio-photo cropped-image big-photo">
+	      <a href ng-click="videoCtrl.showModal(videoCtrl.bigItem);">
+	        <img ng-src="{{videoCtrl.bigItem.imageUrl}}" alt="portafolio" ng-class="videoCtrl.bigItem.class" />
+	      </a>
+	    </div>
+	  </div>
+	  <div class="col-md-4 col-xs-12">
+	    <div class="row" ng-repeat="item in videoCtrl.secondSection">
+	      <div class="col-md-12">
+	        <div class="portafolio-photo cropped-image">
+	          <a href ng-click="videoCtrl.showModal(item);">
+	            <img ng-src="{{item.imageUrl}}" alt="portafolio" ng-class="item.class" />
+	          </a>
+	        </div>
+	      </div>
+	    </div>
+	    <!-- end row -->
+	  </div>
+	</div>
+	<!-- end second-portafolio row -->
+	<div class="row">
+	  <div class="col-md-4 col-xs-12" ng-repeat="item in videoCtrl.thirdSection" >
+	    <div class="portafolio-photo cropped-image">
+	      <a href ng-click="videoCtrl.showModal(item);">
+	        <img ng-src="{{item.imageUrl}}" alt="Image" ng-class="item.class" />
+	      </a>
+	    </div>
+	  </div>
+	</div>
+	<!-- end third-portafolio row -->
+</div>
+<!-- end container -->

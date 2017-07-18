@@ -7,6 +7,7 @@
 		'chaiApp.trayect',
 		'chaiApp.clases',
 		'chaiApp.portafolio',
-		'chaiApp.series'
+		'chaiApp.series',
+		'chaiApp.video'
 	]);
 })();
