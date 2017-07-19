@@ -55,6 +55,9 @@
 				case 'diseno':
 					serviceUrl = 'jsons/portafolio-diseno.json';
 				break;
+				case 'video-general':
+					serviceUrl = 'jsons/video-general.json';
+				break;
 			}
 			return serviceUrl;
 		}

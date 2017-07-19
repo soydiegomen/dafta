@@ -1,0 +1,50 @@
+[
+	{
+		"itemid" : 0,
+		"imageUrl": "img/videos/general/uno.png",
+		"type": "normal",
+		"videoUrl": "video/1.mov"
+	},
+	{
+		"itemid" : 1,
+		"imageUrl": "img/videos/general/dos.png",
+		"type": "normal",
+		"videoUrl": "video/2.m4v"
+	},	
+	{
+		"itemid" : 2,
+		"imageUrl": "img/videos/general/tres.png",
+		"type": "normal",
+		"videoUrl": "video/3.mov"
+	},
+	{
+		"itemid" : 3,
+		"imageUrl": "img/videos/general/cinco.png",
+		"type": "big",
+		"videoUrl": "video/5.m4v"
+	},
+	{
+		"itemid" : 4,
+		"imageUrl": "img/videos/general/ocho.png",
+		"type": "normal",
+		"videoUrl": "video/8.m4v"
+	},
+	{
+		"itemid" : 5,
+		"imageUrl": "img/videos/general/seis.png",
+		"type": "normal",
+		"videoUrl": "video/6.m4v"
+	},
+	{
+		"itemid" : 6,
+		"imageUrl": "img/videos/general/siete.png",
+		"type": "normal",
+		"videoUrl": "video/7.mov"
+	},
+	{
+		"itemid" : 7,
+		"imageUrl": "img/videos/general/cuatro.png",
+		"type": "normal",
+		"videoUrl": "video/4.m4v"		
+	}
+]

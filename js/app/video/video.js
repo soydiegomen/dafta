@@ -15,8 +15,7 @@
 		modalCtrl.close = close;
 
 		//Attributes
-		modalCtrl.slides = [];
-		modalCtrl.active = 0;
+		modalCtrl.selectedVideo = {};
 
 		activate();
 
@@ -26,10 +25,12 @@
 		}
 
 		function fillSlider(data){
-			//index property must start with 0
-			modalCtrl.slides = data;
-			//Select slide of item selected
-			modalCtrl.active = item.itemid;
+			//Set selected video
+			if(data.length > item.itemid){
+				modalCtrl.selectedVideo = data[item.itemid];
+			}else{
+				console.log('The video selected is out of range');
+			}
 		}
 
 		function close(){
@@ -75,37 +76,9 @@
 		function getGeneralData(key){
 			var portafolio = {};
 			switch(key){
-				case 'aereas':
-					portafolio.type = 'aereas';
-					portafolio.title = 'aéreas';
-				break;
-				case 'corporativa':
-					portafolio.type = 'corporativa';
-					portafolio.title = 'imagen corporativa';
-				break;
-				case 'retrato':
-					portafolio.type = 'retrato';
-					portafolio.title = 'retrato';
-				break;
-				case 'product-shot':
-					portafolio.type = 'product-shot';
-					portafolio.title = 'product shot';
-				break;
-				case 'interiorismo':
-					portafolio.type = 'interiorismo';
-					portafolio.title = 'interiorismo';
-				break;
-				case 'caricia-luz':
-					portafolio.type = 'caricia-luz';
-					portafolio.title = 'caricia de luz';
-				break;
-				case 'cultura':
-					portafolio.type = 'cultura';
-					portafolio.title = 'cultura';
-				break;
-				case 'diseno':
-					portafolio.type = 'diseno';
-					portafolio.title = 'Diseño';
+				case 'general':
+					portafolio.type = 'video-general';
+					portafolio.title = 'Video';
 				break;
 			}
 
@@ -143,7 +116,7 @@
 
 		function showModal(item){
 			var modalInstance = $uibModal.open({
-		        templateUrl: 'js/app/portafolio/portafolio-modal.html',
+		        templateUrl: 'js/app/video/video-modal.html',
 		        controller: 'VideoModalCtrl',
 		        controllerAs: 'modalCtrl',
 		        size: 'lg',
