@@ -133,6 +133,14 @@ ul.navbar-nav{
     padding-top: 60px;
     margin-left: 171px;
 }
+/* Phones*/
+@media (max-width: 768px) {
+	.contact-info{
+		font-size: 24px;
+	    padding-top: 60px;
+	    margin-left: 20px;
+	}
+}
 .contact-info li{
 	margin-bottom: 15px;
 }
@@ -211,7 +219,33 @@ ul.navbar-nav{
   margin-top: 15px;
   margin-bottom: 15px;
   height: 300px;
-}	
+}
+
+/* Iphone 6 y de menores resoluciones*/
+@media  (max-width: 350px) {
+	.home-photo{
+		height: 165px;
+		margin-top: 20px;
+    	margin-bottom: 20px;
+	}
+}
+@media (min-width: 350px) and (max-width: 400px) {
+	.home-photo{
+		height: 195px;
+		margin-top: 20px;
+    	margin-bottom: 20px;
+	}
+}
+
+/* Iphone 6 plus*/
+@media (min-width: 400px) and (max-width: 750px) {
+	.home-photo{
+		height: 215px;
+		margin-top: 25px;
+    	margin-bottom: 25px;
+	}
+}
+
 /*Portafolio*/
 .portafolio-photo {
   margin-top: 15px;
